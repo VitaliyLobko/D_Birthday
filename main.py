@@ -30,7 +30,7 @@ def get_birthdays_per_week(users):
         days_db = (datetime(year=d_now.year, month=db.month, day=db.day) - year_start).days
 
         if (days_db >= days_now) and (days_db <= days_plus_week):
-            if (db.weekday() == 6) or (db.weekday() == 7):
+            if (db.weekday() == 5) or (db.weekday() == 6):
                 weekday = week[0]
             else:
                 weekday = week[db.weekday()]
