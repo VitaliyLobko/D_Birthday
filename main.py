@@ -9,7 +9,7 @@ users = [
     {"name": "Ilon", "birthday": '2001-05-22T00:00:00'}]
 
 
-def get_birthdays_per_week(users):
+def get_birthdays_per_week(_users):
     week = ['Monday',
             'Tuesday',
             'Wednesday',
@@ -25,7 +25,7 @@ def get_birthdays_per_week(users):
 
     db_list = defaultdict(list)
 
-    for user in users:
+    for user in _users:
         db = datetime.fromisoformat(user['birthday'])
         days_db = (datetime(year=d_now.year, month=db.month, day=db.day) - year_start).days
 
