@@ -44,4 +44,3 @@ lst = get_birthdays_per_week(users)
 for i in lst:
     print(i+":", *lst[i])
 
-
